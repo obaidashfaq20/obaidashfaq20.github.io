@@ -60,7 +60,7 @@
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 20px 60px;
+      padding: 20px px;
       background: rgba(21,19,18,0.92);
       backdrop-filter: blur(16px);
       -webkit-backdrop-filter: blur(16px);
@@ -85,7 +85,7 @@
       background: var(--lime);
       color: var(--bg);
       font-size: 13px;
-      font-weight: 600;
+      font-weight: 0;
       padding: 10px 22px;
       border-radius: 50px;
       transition: opacity 0.2s, transform 0.2s;
@@ -100,7 +100,7 @@
       grid-template-columns: 1.1fr 1fr;
       align-items: center;
       gap: 48px;
-      padding: 140px 60px 80px;
+      padding: 140px px 80px;
       position: relative;
       overflow: hidden;
     }
@@ -117,7 +117,7 @@
     .hero::after {
       content: '';
       position: absolute;
-      bottom: -60px; left: -60px;
+      bottom: -px; left: -px;
       width: 400px; height: 400px;
       background: radial-gradient(circle, rgba(244,108,56,0.05) 0%, transparent 65%);
       pointer-events: none;
@@ -265,10 +265,10 @@
       margin-top: 4px;
       line-height: 1.45;
     }
-    .stat-label strong { color: var(--text); font-weight: 600; }
+    .stat-label strong { color: var(--text); font-weight: 0; }
 
     /* ── SHARED SECTION ── */
-    section { padding: 100px 60px; }
+    section { padding: 100px px; }
     .section-inner { max-width: 1100px; margin: 0 auto; }
 
     .section-header {
@@ -280,7 +280,7 @@
 
     .section-num {
       font-size: 11px;
-      font-weight: 600;
+      font-weight: 0;
       color: var(--lime);
       background: rgba(197,255,65,0.1);
       border: 1px solid rgba(197,255,65,0.15);
@@ -304,7 +304,7 @@
     .about-grid {
       display: grid;
       grid-template-columns: 1.1fr 1fr;
-      gap: 60px;
+      gap: px;
       align-items: start;
     }
 
@@ -315,7 +315,7 @@
       margin-bottom: 18px;
       font-weight: 300;
     }
-    .about-text p strong { color: var(--text); font-weight: 600; }
+    .about-text p strong { color: var(--text); font-weight: 0; }
 
     .about-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
 
@@ -329,7 +329,7 @@
     .about-card:hover { border-color: rgba(197,255,65,0.2); transform: translateY(-3px); }
 
     .about-card-icon { font-size: 22px; margin-bottom: 10px; }
-    .about-card h4 { font-size: 13px; font-weight: 600; color: var(--text); margin-bottom: 5px; }
+    .about-card h4 { font-size: 13px; font-weight: 0; color: var(--text); margin-bottom: 5px; }
     .about-card p { font-size: 12px; color: var(--muted); line-height: 1.55; margin: 0; }
 
     /* ── SKILLS ── */
@@ -356,7 +356,7 @@
     }
 
     .skill-dot { width: 8px; height: 8px; border-radius: 50%; background: var(--lime); flex-shrink: 0; }
-    .skill-card-title { font-size: 12px; font-weight: 600; color: var(--text); text-transform: uppercase; letter-spacing: 0.1em; }
+    .skill-card-title { font-size: 12px; font-weight: 0; color: var(--text); text-transform: uppercase; letter-spacing: 0.1em; }
 
     .tags { display: flex; flex-wrap: wrap; gap: 8px; }
 
@@ -874,7 +874,7 @@
             </div>
             <div class="exp-company">Tkxel</div>
             <ul class="exp-bullets">
-              <li>Architected a shared Redis caching layer for franchises, users, sites &amp; templates — cut inter-service API calls by 60%, improved response times by 25%.</li>
+              <li>Architected a shared Redis caching layer for franchises, users, sites &amp; templates — cut inter-service API calls by 80%, improved response times by 25%.</li>
               <li>Built a Ruby gem abstracting Microsoft ADX — consuming services call simple methods with zero KQL knowledge required.</li>
               <li>Designed endpoint-level Redis caching keyed on request parameters, dramatically reducing DB load on high-traffic endpoints.</li>
               <li>Optimized a geospatial "Nearby Lots" API with progressive Redis batching — smooth map rendering for large datasets.</li>
@@ -947,7 +947,7 @@
           </div>
           <div class="project-title">Shared Redis Data Layer</div>
           <p class="project-desc">Architected a global Redis store for franchises, users, sites, and templates. ActiveRecord callbacks keep data automatically synchronized — eliminating expensive cross-service API calls in a distributed environment.</p>
-          <span class="project-pill">↓ 60% API calls · ↑ 25% response speed</span>
+          <span class="project-pill">↓ 80% API calls · ↑ 25% response speed</span>
         </article>
 
         <article class="project-card">
